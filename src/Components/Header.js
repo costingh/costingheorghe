@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Header.css';
 
-function Header() {
+function Header({showContactModal}) {
     return (
         <header>
             <div className="header-container">
@@ -12,7 +12,7 @@ function Header() {
                             <ul className="nav nav-light">
                                 <li className="nav-item active"><a className="nav-link" href="/">Home</a></li>
                                 <li className="nav-item"><a className="nav-link" href="blog">Blog</a></li>
-                                <li className="nav-item"><span className="nav-link" data-toggle="modal" data-target="#contactModal">Contact</span></li>
+                                <li className="nav-item"><span className="nav-link" data-toggle="modal" data-target="#contactModal" onClick={showContactModal}>Contact</span></li>
                             </ul>
                             <div className="mobile-menu"><span></span><span></span></div>
                         </div>

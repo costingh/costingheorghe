@@ -8,7 +8,7 @@ function Main() {
         <div class="main-content landing">
 				<HomeHero/>
 				<HomeServices/>
-                <HomeWorks/>
+        <HomeWorks/>
 		</div>
     )
 }
