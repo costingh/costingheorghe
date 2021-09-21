@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/HomeHero.css'
 
-function HomeHero() {
+function HomeHero({showContactModal}) {
     return (
         <section class="home-hero">
             <div class="hero-bg">
@@ -18,7 +18,7 @@ function HomeHero() {
                         <p>Computer science student</p>
                         <div class="hero-button-float">
                             <div class="hero-button-wrapper">
-                                <button class="btn btn-white btn-talk" data-toggle="modal" data-target="#contactModal"><i class="icon-pp-envelope"></i><span>Let's talk!</span></button>
+                                <button class="btn btn-white btn-talk" onClick={showContactModal}><i class="icon-pp-envelope"></i><span>Let's talk!</span></button>
                             </div>
                         </div>
                     </div>

@@ -25,7 +25,7 @@ function ContactModal({hideContactModal, showModal}) {
     }
 
     return (
-        <div className="modal contact-modal fade" id="contactModal" role="dialog">
+        <div className="modal contact-modal modal-backdrop fade" id="contactModal" role="dialog">
             <div className="modal-dialog modal-dialog-centered">
                 <svg width="742px" height="918px" viewBox="0 0 742 918" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                     <defs>

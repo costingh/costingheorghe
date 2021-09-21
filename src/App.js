@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="app">
         <Header showContactModal={showContactModal}/>
-        <Main/>
+        <Main showContactModal={showContactModal}/>
         <ContactModal hideContactModal={hideContactModal} showModal={showModal}/>
     </div>
   );

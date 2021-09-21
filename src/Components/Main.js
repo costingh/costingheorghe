@@ -3,10 +3,10 @@ import HomeHero from './HomeHero'
 import HomeServices from './HomeServices'
 import HomeWorks from './HomeWorks'
 
-function Main() {
+function Main({showContactModal}) {
     return (
         <div class="main-content landing">
-				<HomeHero/>
+				<HomeHero showContactModal={showContactModal}/>
 				<HomeServices/>
         <HomeWorks/>
 		</div>
