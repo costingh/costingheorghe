@@ -46,16 +46,23 @@ function ContactModal({hideContactModal, showModal}) {
                         <img src="./assets/icons/modal-close.png"/>
                     </span>
                     <div className="modal-body">
-                        <div className="modal-success">
+                        {/* <div className="modal-success">
                             <div className="text-center">
                                 <h3>Thank You!</h3>
                                 <p>We will be in contact with you within 1 to 2 working dasys!</p>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="modal-form show">
                             <div>
+                                <h3>Let's Talk!</h3>
+                                <p>We will get back to you within one to two days through email. Also please don't forget to check your spam account just in case!</p>
                                 <div className="form-wrapper">
-                                    
+                                    <input type="text" placeholder="Name *"/>
+                                    <input type="text" placeholder="Email *"/>
+                                    <input type="text" placeholder="Subject *"/>
+                                    <input type="text" placeholder="Message *"/>
+                                    <div className="divider"></div>
+                                    <div className="send-request-btn">Send Request</div>
                                 </div>
                             </div>
                         </div>

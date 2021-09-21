@@ -699,3 +699,68 @@
     margin: 50px 0 0
 }
 
+/* Form group */
+
+.contact-modal .modal-body h3 {
+    margin: 0;
+    font-family: Playfair Display,serif;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.contact-modal .form-wrapper {
+    padding: 5vh 0px;
+}
+
+.contact-modal input {
+    padding-bottom: 12px;
+    margin-bottom: 5vh;
+    border: none !important;
+    border-bottom: 1px solid rgba(190,190,190,0.4) !important;
+    border-radius: 0 !important;
+    position: relative;
+    z-index: 1;
+    height: 32px !important;
+    padding: 0 0 12px !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    letter-spacing: .5px;
+    color: #1b2025;
+    background-color: transparent;
+    transition: all .25s ease;
+    background: transparent;
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.contact-modal .divider {
+    height: 1px;
+    width: 100%;
+    margin-top: 15vh;
+    background: rgba(190,190,190,0.4);
+}
+
+.contact-modal .send-request-btn {
+    margin-top: 40px;
+    background-color: #ef4b6c;
+    color: #fff;
+    width: 196px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .75px;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 10px 16px 40px 0 rgba(255,84,117,.46);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.contact-modal .send-request-btn:hover {
+    background-color: #ef4b6ce0;
+}
+
