@@ -1,31 +1,8 @@
 import React from 'react'
 import '../styles/Timeline.css'
+import {timelineEvents} from '../utils/constants'
 
 function Timeline() {
-    const timelineEvents = [
-        {
-            from: 'September 2015',
-            to: 'May 2019',
-            universityName: 'Matei Basarab National College',
-            description: 'Mathematics & Computer Science',
-            classes: [
-                'Mathematics',
-                'Computer science',
-                'Physics',
-            ]
-        },
-        {
-            from: 'September 2019',
-            to: 'Present',
-            universityName: 'Politehnica University of Bucharest',
-            description: 'Mathematics & Computer Science',
-            classes: [
-                'Computer science',
-                'Mathematics',
-                'Physics',
-            ]
-        },
-    ]
     return (
         <section className="home-works" style={{margin: '300px 0 100px 0'}}>
             <div className="container">

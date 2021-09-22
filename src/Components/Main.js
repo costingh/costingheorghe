@@ -4,6 +4,7 @@ import HomeHero from './HomeHero'
 import HomeServices from './HomeServices'
 import HomeWorks from './HomeWorks'
 import Timeline from './Timeline'
+import Skills from './Skills'
 
 function Main({showContactModal}) {
     return (
@@ -11,6 +12,7 @@ function Main({showContactModal}) {
 				<HomeHero showContactModal={showContactModal}/>
         <About/>
         <Timeline/>
+        <Skills/>
 				<HomeServices/>
         <HomeWorks/>
 		</div>
