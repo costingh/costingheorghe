@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
     return (
-        <section className="home-works">
+        <section className="home-works" style={{margin: '200px 0px'}}>
             <div className="container">
                 <div className="works-section">
                     <div className="section-title text-center">
