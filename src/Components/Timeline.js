@@ -57,20 +57,3 @@ function Timeline() {
 }
 
 export default Timeline
-
-
-/* 
-<ul class="timeline">
-            {timelineEvents.map(event => {
-                return  <li class="timeline-event">
-                            <label class="timeline-event-icon"></label>
-                            <div class="timeline-event-copy">
-                            <p class="timeline-event-thumbnail">{event.from} - {event.to}</p>
-                            <h3>{event.universityName}</h3>
-                            <h4>{event.description}</h4>
-                            {event.classes.map(discipline => <p>{discipline}</p>)}
-                            </div>
-                        </li>
-            })}
-        </ul>  
-         */
