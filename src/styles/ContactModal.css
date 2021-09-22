@@ -217,11 +217,14 @@
     z-index: 1050;
     display: none;
     outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
 }
 
 .modal-open .modal {
     overflow-x: hidden;
-    overflow-y: auto
+    overflow-y: auto;
 }
 
 .modal-dialog {
