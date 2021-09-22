@@ -1,49 +1,3 @@
-/* import React, {useState, useEffect} from 'react';
-import '../styles/SwitchButton.css';
-
-export default function SwitchButton({checked, setChecked}) {
-    const [loading, setLoading] = useState(true);
-
-    const handleChange = (event) => {
-      setChecked(!checked);
-  
-      if(!loading) {
-        const element = document.querySelector('.dynamicText');
-        if(!event.target.checked) {
-          element.innerHTML = 'Skills';
-          element.style.color = '#fbe0c4';
-        } else {
-          element.innerHTML = 'Tools';
-          element.style.color = '#333';
-        }
-      }
-    };
-  
-    useEffect(() => {
-        setLoading(false);
-        const thumb = document.querySelector('.MuiSwitch-thumb');
-        const element = document.createElement("p");
-        let text = document.createTextNode("Skills");
-        element.appendChild(text);
-        thumb.appendChild(element);
-    
-        // styling
-        element.classList.add('dynamicText');
-        element.style.color = '#fbe0c4';
-        element.style.marginTop = '5px';	
-      }, []);
-    
-  return (
-    <div className="switch-container">
-        <label>
-            <input checked={checked} onChange={handleChange} className="switch" type="checkbox" />
-            <div>
-                <div></div>
-            </div>
-        </label>
-    </div>
-  );
-} */
 
 import React, {useState, useEffect} from 'react';
 import { withStyles } from '@material-ui/core/styles';
@@ -55,35 +9,35 @@ const IOSSwitch = withStyles((theme) => ({
     height: 40,
     padding: 0,
     margin: 0,
-	marginTop: '15px'
+    marginTop: '15px',
   },
   switchBase: {
     padding: 0,
-    color: '#03030d',
+    color: '#f05d7b',
     '&$checked': {
       transform: 'translateX(99.5px)',
-      color: '#fbe0c4',
+      color: '#f2f4f9',
       '& + $track': {
-        backgroundColor: '#03030d',
+        background: '#f05d7b',
         opacity: 1,
         border: 'none',
       },
     },
     '&$focusVisible $thumb': {
       color: '#03030d',
-      border: '6px solid #fff',
+      border: '6px solid #f05d7b',
     },
   },
   thumb: {
     width: 100,
     height: 40,
     borderRadius: '80px',
-    border: '2px solid #03030d',
+    border: '2px solid #f05d7b',
   },
   track: {
     borderRadius: 30,
-    border: '2px solid #03030d',
-    backgroundColor: '#fbe0c4',
+    background: '#f2f4f9',
+    border: '2px solid #f05d7b',
     opacity: 1,
     transition: theme.transitions.create(['background-color', 'border']),
   },
@@ -117,10 +71,10 @@ export default function SwitchButton({checked, setChecked}) {
       const element = document.querySelector('.dynamicText');
       if(!event.target.checked) {
         element.innerHTML = 'Skills';
-        element.style.color = '#fbe0c4';
+        element.style.color = '#f2f4f9';
       } else {
         element.innerHTML = 'Tools';
-        element.style.color = '#333';
+        element.style.color = '#f05d7b';
       }
     }
   };
@@ -135,7 +89,9 @@ export default function SwitchButton({checked, setChecked}) {
 
     // styling
     element.classList.add('dynamicText');
-    element.style.color = '#fbe0c4';
+    element.style.fontWeight = '600';
+    element.style.letterSpacing = '1.6px';
+    element.style.color = '#f2f4f9';
     element.style.marginTop = '5px';	
   }, []);
 
