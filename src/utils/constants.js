@@ -56,22 +56,6 @@ export const technologySkills = [
        img: './assets/images/skills/bootstrap.png',     
         delay: 300
     },
-    {
-       img: './assets/images/skills/bootstrap.png',       
-        delay: 200
-    },
-    {
-       img: './assets/images/skills/bootstrap.png',   
-        delay: 200
-    },
-    {
-       img: './assets/images/skills/bootstrap.png',  
-        delay: 100
-    },
-    {
-       img: './assets/images/skills/bootstrap.png', 
-        delay: 100
-    }
 ];
 
 export const toolsSkills = [
@@ -107,20 +91,4 @@ export const toolsSkills = [
         img: './assets/images/skills/vs-code.png',     
         delay: 300
     },
-    {
-        img: './assets/images/skills/vs-code.png',       
-        delay: 200
-    },
-    {
-        img: './assets/images/skills/vs-code.png',   
-        delay: 200
-    },
-    {
-        img: './assets/images/skills/vs-code.png',  
-        delay: 100
-    },
-    {
-        img: './assets/images/skills/vs-code.png', 
-        delay: 100
-    }
 ]

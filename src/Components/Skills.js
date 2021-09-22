@@ -28,8 +28,8 @@ function Skills() {
                                     : <h1>Programming Skills</h1>
                                 }
                                 {checked 
-                                    ? <p>TOOLS ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, voluptate ratione? Delectus, praesentium. Delectus non vero voluptatibus perspiciatis modi quam.</p>
-                                    : <p>SKILLS ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, voluptate ratione? Delectus, praesentium. Delectus non vero voluptatibus perspiciatis modi quam.</p>
+                                    ? <p>These are the tools that I used the most.</p>
+                                    : <p>These are the technologies that I'm familiar to.</p>
                                 }
                                 <div className="leftAbs">
                                     <div></div>
