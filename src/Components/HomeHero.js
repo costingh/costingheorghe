@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/HomeHero.css'
 
 function HomeHero({showContactModal}) {
     return (
