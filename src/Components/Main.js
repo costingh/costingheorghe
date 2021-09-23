@@ -8,7 +8,7 @@ import Skills from './Skills'
 
 function Main({showContactModal}) {
     return (
-        <div class="main-content landing">
+        <div className="main-content landing">
 				<HomeHero showContactModal={showContactModal}/>
         <About/>
         <Timeline/>

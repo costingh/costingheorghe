@@ -43,7 +43,7 @@ function ContactModal({hideContactModal, showModal}) {
                 </svg>
                 <div className="modal-content" style={{backgroundImage: 'url(./assets/images/contact-modal-illustration.png)'}}>
                     <span data-dismiss="modal" onClick={hide}>
-                        <img src="./assets/icons/modal-close.png"/>
+                        <img src="./assets/icons/modal-close.png" alt=""/>
                     </span>
                     <div className="modal-body">
                         {/* <div className="modal-success">

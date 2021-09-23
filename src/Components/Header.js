@@ -7,7 +7,7 @@ function Header({showContactModal}) {
             <div className="header-container">
                 <div className="container">
                     <div className="header-section d-flex justify-content-between align-items-center">
-                        <div className="header-logo"><a href="/"><img src="./assets/images/logo-light.png"/></a></div>
+                        <div className="header-logo"><a href="/"><img src="./assets/images/logo-light.png" alt=""/></a></div>
                         <div className="header-menu">
                             <ul className="nav nav-light">
                                 <li className="nav-item active"><a className="nav-link" href="/">Home</a></li>

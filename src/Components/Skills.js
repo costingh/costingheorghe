@@ -47,8 +47,8 @@ function Skills() {
                             </div>
                             <div className="right">
                                 <div className="row">
-                                {checked && items.map((item) => { return <Card img={item.img} delay={item.delay}/> })}
-                                {!checked && items.map((item) => { return <Card img={item.img} delay={item.delay}/> })}
+                                {checked && items.map((item, index) => { return <Card img={item.img} delay={item.delay} key={item.img+'-'+index}/> })}
+                                {!checked && items.map((item, index) => { return <Card img={item.img} delay={item.delay} key={item.img+'-'+index}/> })}
                                 </div>
                             </div>
                         </div>

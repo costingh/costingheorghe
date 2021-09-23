@@ -11,7 +11,7 @@ function About() {
                     <div className="works-container">
                         <div className="work-list lifecycle-works left">
                             <div className="work-wrapper d-flex">
-                                <div className="work-image d-flex justify-content-center align-items-center"><img src="./assets/images/avatar2.png"/></div>
+                                <div className="work-image d-flex justify-content-center align-items-center"><img src="./assets/images/avatar2.png" alt=""/></div>
                                 <div className="work-description">
                                     <div className="work-detail d-flex flex-column justify-content-between">
                                         <div>

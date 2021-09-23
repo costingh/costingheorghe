@@ -17,10 +17,10 @@ function HomeWorks() {
                                             <h3>Project 1</h3>
                                             <p>Project 1 Description</p>
                                         </div>
-                                        <div><a className="btn btn-work" href="" target="_blank">View Project</a></div>
+                                        <div><a className="btn btn-work" href="/" target="_blank">View Project</a></div>
                                     </div>
                                 </div>
-                                <div className="work-image d-flex justify-content-center align-items-center"><img src="./assets/images/crisp-works.png"/></div>
+                                <div className="work-image d-flex justify-content-center align-items-center"><img src="./assets/images/crisp-works.png" alt=""/></div>
                             </div>
                         </div>
                         <div className="work-list lifecycle-works">
@@ -31,10 +31,10 @@ function HomeWorks() {
                                             <h3>Project 2</h3>
                                             <p>Project 2 Description</p>
                                         </div>
-                                        <div><a className="btn btn-work" href="e" target="_blank">View Project</a></div>
+                                        <div><a className="btn btn-work" href="/" target="_blank">View Project</a></div>
                                     </div>
                                 </div>
-                                <div className="work-image d-flex justify-content-center align-items-center"><img src="./assets/images/lifecycle-works.png"/></div>
+                                <div className="work-image d-flex justify-content-center align-items-center"><img src="./assets/images/lifecycle-works.png" alt=""/></div>
                             </div>
                         </div>
                         <div className="work-list calendar-works">
@@ -45,7 +45,7 @@ function HomeWorks() {
                                             <h3>Project 3</h3>
                                             <p>Project 3 Description</p>
                                         </div>
-                                        <div><a className="btn btn-work" href="" target="_blank">View Project</a></div>
+                                        <div><a className="btn btn-work" href="/" target="_blank">View Project</a></div>
                                     </div>
                                 </div>
                                 <div className="work-image"></div>

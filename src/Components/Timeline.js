@@ -11,16 +11,16 @@ function Timeline() {
                         <h2>Education</h2>
                     </div>
                     <div className="works-container">
-                        <ul class="timeline">
-                            {timelineEvents.map(event => {
-                                return  <li class="timeline-event">
-                                            <label class="timeline-event-icon"></label>
-                                            <div class="timeline-event-copy">
-                                                <p class="timeline-event-thumbnail">{event.from} - {event.to}</p>
+                        <ul className="timeline">
+                            {timelineEvents.map((event, index) => {
+                                return  <li className="timeline-event" key={index}>
+                                            <label className="timeline-event-icon"></label>
+                                            <div className="timeline-event-copy">
+                                                <p className="timeline-event-thumbnail">{event.from} - {event.to}</p>
                                                 <h3>{event.universityName}</h3>
                                                 <h4>{event.description}</h4>
                                                 <ul className="disciplines">
-                                                    {event.classes.map(discipline => <li className="discipline">{discipline}</li>)}
+                                                    {event.classes.map(discipline => <li className="discipline" key={discipline}>{discipline}</li>)}
                                                 </ul>
                                             </div>
                                         </li>

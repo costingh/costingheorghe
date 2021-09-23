@@ -3,22 +3,22 @@ import '../styles/HomeHero.css'
 
 function HomeHero({showContactModal}) {
     return (
-        <section class="home-hero">
-            <div class="hero-bg">
-                <div class="hero-pattern-bg"><img class="hero-pattern-img__default" src="./assets/images/hero-pattern-bg.png"/><img class="hero-pattern-img__large" src="./assets/images/hero-pattern-bg-lg.png"/></div>
+        <section className="home-hero">
+            <div className="hero-bg">
+                <div className="hero-pattern-bg"><img className="hero-pattern-img__default" src="./assets/images/hero-pattern-bg.png" alt=""/><img className="hero-pattern-img__large" src="./assets/images/hero-pattern-bg-lg.png" alt=""/></div>
             </div>
-            <div class="hero-character">
-                <div class="hero-guy-1"><img class="hero-guy-1__default" src="./assets/images/hero-guy-1.png"/><img class="hero-guy-1__large" src="./assets/images/untitled.png"/></div>
+            <div className="hero-character">
+                <div className="hero-guy-1"><img className="hero-guy-1__default" src="./assets/images/hero-guy-1.png" alt=""/><img className="hero-guy-1__large" src="./assets/images/untitled.png" alt=""/></div>
             </div>
-            <div class="hero-overlay"></div>
-            <div class="hero-section">
-                <div class="hero-container">
-                    <div class="hero-text">
+            <div className="hero-overlay"></div>
+            <div className="hero-section">
+                <div className="hero-container">
+                    <div className="hero-text">
                         <h1>I'm Costin Gheorghe</h1>
                         <p>Computer science student</p>
-                        <div class="hero-button-float">
-                            <div class="hero-button-wrapper">
-                                <button class="btn btn-white btn-talk" onClick={showContactModal}><i class="icon-pp-envelope"></i><span>Let's talk!</span></button>
+                        <div className="hero-button-float">
+                            <div className="hero-button-wrapper">
+                                <button className="btn btn-white btn-talk" onClick={showContactModal}><i className="icon-pp-envelope"></i><span>Let's talk!</span></button>
                             </div>
                         </div>
                     </div>
