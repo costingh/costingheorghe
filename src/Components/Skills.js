@@ -22,33 +22,39 @@ function Skills() {
                 <div className="works-container">
                     <div className="skills">
                         <div className="container">
-                            <div className="left">
-                                {checked 
-                                    ? <h1>Tools used</h1>
-                                    : <h1>Programming Skills</h1>
-                                }
-                                {checked 
-                                    ? <p>These are the tools that I used the most.</p>
-                                    : <p>These are the technologies that I'm familiar to.</p>
-                                }
-                                <div className="leftAbs">
-                                    <div></div>
-                                    {checked 
-                                        ? <p>My Tools</p>
-                                        : <p>My skills</p>
-                                    } 
+                            <div className="row">
+                                <div className="col-sm-12 col-md-6">
+                                    <div className="left">
+                                        {checked 
+                                            ? <h1>Tools used</h1>
+                                            : <h1>Programming Skills</h1>
+                                        }
+                                        {checked 
+                                            ? <p>These are the tools that I used the most when building projects.</p>
+                                            : <p>I have used this technologies many times to develop web apps.</p>
+                                        }
+                                        <div className="leftAbs">
+                                            <div></div>
+                                            {checked 
+                                                ? <p>My Tools</p>
+                                                : <p>My skills</p>
+                                            } 
+                                        </div>
+                                        <div className="btns">
+                                            <SwitchButton 
+                                                checked={checked} 
+                                                setChecked={setChecked} 
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="btns">
-                                    <SwitchButton 
-                                        checked={checked} 
-                                        setChecked={setChecked} 
-                                    />
-                                </div>
-                            </div>
-                            <div className="right">
-                                <div className="row">
-                                {checked && items.map((item, index) => { return <Card img={item.img} delay={item.delay} key={item.img+'-'+index}/> })}
-                                {!checked && items.map((item, index) => { return <Card img={item.img} delay={item.delay} key={item.img+'-'+index}/> })}
+                                <div className="col-sm-12 col-md-6">
+                                    <div className="right">
+                                        <div className="cards-row">
+                                            {checked && items.map((item, index) => { return <Card img={item.img} delay={item.delay} key={item.img+'-'+index}/> })}
+                                            {!checked && items.map((item, index) => { return <Card img={item.img} delay={item.delay} key={item.img+'-'+index}/> })}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

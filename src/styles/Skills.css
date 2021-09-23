@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 0px;
+    padding: 10vh 0px;
 }
 
 .skills .container {
@@ -45,16 +45,18 @@
 }
 
 .skills .leftAbs p {
-    color: #314e52;
+    color: #626881;
     font-size: 14px;
     letter-spacing: .5px;
     text-transform: uppercase;
+    padding: 0 !important;
+    margin: 0;
 }
 
 .skills .leftAbs div {
     width: 70px;
     height: 2px;
-    background: #314e52;
+    background: #626881;
     margin-right: 20px;
 }
 
@@ -65,11 +67,17 @@
     justify-content: center;
     align-items: center;
 }
-.skills .row {
+.skills .cards-row {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     position: relative;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+@media (max-width:767px) {
+    .skills .cards-row {
+        margin-top: 100px;
+    }
 }
