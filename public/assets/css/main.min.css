@@ -9191,9 +9191,9 @@ section.home-hero {
     height: 640px;
     /* background-image: linear-gradient(to top right, #450b7c, #563cc9, #49e9fb) */
    /*  background-image: linear-gradient(to top right, #36096d, #5c299b, #37d5d6); */
-    background-image: linear-gradient(to right top, #00384f, #003d56, #00435e, #004865, #004e6d, #005877, #006282, #006d8c, #007f99, #0091a2, #00a3a7, #00b5a9);
+    /* background-image: linear-gradient(to right top, #00384f, #003d56, #00435e, #004865, #004e6d, #005877, #006282, #006d8c, #007f99, #0091a2, #00a3a7, #00b5a9); */
     /* background-image: linear-gradient(to right top, #00384f, #00415c, #004b69, #005477, #005e85, #006990, #00749a, #007fa4, #008ea9, #009ca9, #00a9a2, #00b596); */
-    
+    background-image: linear-gradient(to top right, #cf2bfe, #5e197a, #1fbeb1)
 }
 
 @media (min-width:768px) {
@@ -11090,7 +11090,7 @@ footer {
 }
 
 .hero-button-float .btn.btn-white span {
-    color: #009ca9
+    color: #900daa
 }
 
 .hero-button-float.floating .btn {
