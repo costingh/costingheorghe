@@ -2,7 +2,8 @@ import './App.css';
 import ContactModal from './Components/ContactModal';
 import Header from './Components/Header';
 import Main from './Components/Main';
-import {useState} from 'react'
+import React, {useState} from 'react'
+import Footer from './Components/Footer';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -20,6 +21,7 @@ function App() {
         <Header showContactModal={showContactModal}/>
         <Main showContactModal={showContactModal}/>
         <ContactModal hideContactModal={hideContactModal} showModal={showModal}/>
+        <Footer/>
     </div>
   );
 }
