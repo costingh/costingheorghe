@@ -3,7 +3,7 @@ import '../styles/HomeServices.css'
 
 function HomeServices() {
     return (
-        <section className="home-services">
+        <section id="services-section" className="home-services">
             <div className="container">
                 <div className="services-section">
                     <div className="section-title text-center">
@@ -16,7 +16,11 @@ function HomeServices() {
                                     <div className="service-image">
                                         <div className="service-icon">
                                             <div className="icon-object">
-                                                <img src="./assets/images/services/ux-ui-icon.png" width="100px" alt=""/>
+                                                <img
+                                                    src="./assets/images/services/ux-ui-icon.png"
+                                                    width="100px"
+                                                    alt=""
+                                                />
                                             </div>
                                             <div className="icon-mask">
                                                 {/* <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -44,7 +48,10 @@ function HomeServices() {
                                     </div>
                                     <div className="service-detail text-center">
                                         <h3>UI/UX</h3>
-                                        <p>Landing Pages, User Flow, Wireframing, Prototyping</p>
+                                        <p>
+                                            Landing Pages, User Flow,
+                                            Wireframing, Prototyping
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -53,7 +60,11 @@ function HomeServices() {
                                     <div className="service-image">
                                         <div className="service-icon">
                                             <div className="icon-object">
-                                                <img src="./assets/images/services/command-line-icon.png" width="100px" alt=""/>
+                                                <img
+                                                    src="./assets/images/services/command-line-icon.png"
+                                                    width="100px"
+                                                    alt=""
+                                                />
                                             </div>
                                             <div className="icon-mask">
                                                 {/* <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -83,7 +94,10 @@ function HomeServices() {
                                     </div>
                                     <div className="service-detail text-center">
                                         <h3>Backend</h3>
-                                        <p>Java, Javascript, Spring Boot, Web App</p>
+                                        <p>
+                                            Java, Javascript, Spring Boot, Web
+                                            App
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +106,11 @@ function HomeServices() {
                                     <div className="service-image">
                                         <div className="service-icon">
                                             <div className="icon-object">
-                                                <img src="./assets/images/services/icon-illustration.png" width="100px" alt=""/>
+                                                <img
+                                                    src="./assets/images/services/icon-illustration.png"
+                                                    width="100px"
+                                                    alt=""
+                                                />
                                             </div>
                                             <div className="icon-mask">
                                                 {/* <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -123,7 +141,10 @@ function HomeServices() {
                                     </div>
                                     <div className="service-detail text-center">
                                         <h3>Icon/Illustration</h3>
-                                        <p>Character Design, Icon Set, Illustration Set</p>
+                                        <p>
+                                            Character Design, Icon Set,
+                                            Illustration Set
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +153,11 @@ function HomeServices() {
                                     <div className="service-image">
                                         <div className="service-icon">
                                             <div className="icon-object">
-                                                <img src="./assets/images/services/frontend-icon.png" width="100px" alt=""/>
+                                                <img
+                                                    src="./assets/images/services/frontend-icon.png"
+                                                    width="100px"
+                                                    alt=""
+                                                />
                                             </div>
                                             <div className="icon-mask">
                                                 {/* <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -163,7 +188,10 @@ function HomeServices() {
                                     </div>
                                     <div className="service-detail text-center">
                                         <h3>Frontend</h3>
-                                        <p>Javascript, React.js, Next.js, Responsive Web App</p>
+                                        <p>
+                                            Javascript, React.js, Next.js,
+                                            Responsive Web App
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -172,7 +200,11 @@ function HomeServices() {
                                     <div className="service-image">
                                         <div className="service-icon">
                                             <div className="icon-object">
-                                                <img src="./assets/images/services/api-integration-icon.png" width="100px" alt=""/>
+                                                <img
+                                                    src="./assets/images/services/api-integration-icon.png"
+                                                    width="100px"
+                                                    alt=""
+                                                />
                                             </div>
                                             <div className="icon-mask">
                                                 {/* <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -203,7 +235,10 @@ function HomeServices() {
                                     </div>
                                     <div className="service-detail text-center">
                                         <h3>API</h3>
-                                        <p>Develop REST/RESTFUL API, API Integration</p>
+                                        <p>
+                                            Develop REST/RESTFUL API, API
+                                            Integration
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -212,7 +247,11 @@ function HomeServices() {
                                     <div className="service-image">
                                         <div className="service-icon">
                                             <div className="icon-object">
-                                                <img src="./assets/images/services/databases-icon.png" width="100px" alt=""/>
+                                                <img
+                                                    src="./assets/images/services/databases-icon.png"
+                                                    width="100px"
+                                                    alt=""
+                                                />
                                             </div>
                                             <div className="icon-mask">
                                                 {/* <svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -243,7 +282,10 @@ function HomeServices() {
                                     </div>
                                     <div className="service-detail text-center">
                                         <h3>Databases</h3>
-                                        <p>Relational / Non Relational DB, MongoDB, MySQL</p>
+                                        <p>
+                                            Relational / Non Relational DB,
+                                            MongoDB, MySQL
+                                        </p>
                                     </div>
                                 </div>
                             </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer({ showContactModal }) {
     return (
-        <footer>
+        <footer id="footer-section">
             <div className="footer-bg">
                 <div className="footer-pattern-bg">
                     <img

@@ -2,7 +2,7 @@ import React from 'react'
 
 function HomeWorks() {
     return (
-        <section className="home-works">
+        <section id="projects-section" className="home-works">
             <div className="container">
                 <div className="works-section">
                     <div className="section-title text-center">
