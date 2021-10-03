@@ -6,16 +6,16 @@ import HomeWorks from './HomeWorks'
 import Timeline from './Timeline'
 import Skills from './Skills'
 
-function Main({showContactModal}) {
+function Main({ showContactModal }) {
     return (
         <div className="main-content landing">
-				<HomeHero showContactModal={showContactModal}/>
-        <About/>
-        <Timeline/>
-        <Skills/>
-				<HomeServices/>
-        <HomeWorks/>
-		</div>
+            <HomeHero showContactModal={showContactModal} />
+            <About />
+            <Timeline />
+            <Skills />
+            <HomeServices />
+            <HomeWorks />
+        </div>
     )
 }
 
