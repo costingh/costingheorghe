@@ -1,8 +1,9 @@
-import React from 'react'
-import '../styles/Header.css'
+import React, { useState, useEffect } from 'react'
 import ScrollSpy from 'react-scrollspy-navigation'
 
 function Header({ showContactModal }) {
+    const [color, setColor] = useState('#fff')
+
     const toggleMenu = () => {
         const app = document.querySelector('.app')
         const headerMenu = document.querySelector('.header-menu')
@@ -18,6 +19,36 @@ function Header({ showContactModal }) {
             mobileMenu.classList.add('mobile')
         }
     }
+
+    window.addEventListener('scroll', function () {
+        let header = document.querySelector('header')
+        let mobileMenuBtn = document
+            .querySelector('.mobile-menu')
+            .querySelectorAll('span')
+        let st = window.pageYOffset || document.documentElement.scrollTop // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+
+        let lastScrollTop = 0
+        if (st > lastScrollTop) {
+            // downscroll code
+            header.style.position = 'fixed'
+            setColor('#212529')
+            header.style.backgroundColor = '#fff'
+            header.style.borderBottom = '1px solid #ef4b6c'
+
+            for (let i = 0; i < mobileMenuBtn.length; i++)
+                mobileMenuBtn[i].style.backgroundColor = '#212529'
+        } else {
+            // upscroll code
+            header.style.position = 'absolute'
+            setColor('#fff')
+            header.style.backgroundColor = 'transparent'
+            header.style.borderBottom = 'none'
+            for (let i = 0; i < mobileMenuBtn.length; i++)
+                mobileMenuBtn[i].style.backgroundColor = 'gray'
+        }
+
+        //lastScrollTop = st <= 0 ? 0 : st // For Mobile or negative scrolling
+    })
 
     return (
         <header id="header-section">
@@ -40,6 +71,7 @@ function Header({ showContactModal }) {
                                             className="nav-link"
                                             href="#header-section"
                                             ref={React.createRef()}
+                                            style={{ color: color }}
                                         >
                                             Home
                                         </a>
@@ -49,6 +81,7 @@ function Header({ showContactModal }) {
                                             className="nav-link"
                                             href="#about-section"
                                             ref={React.createRef()}
+                                            style={{ color: color }}
                                         >
                                             About
                                         </a>
@@ -58,6 +91,7 @@ function Header({ showContactModal }) {
                                             className="nav-link"
                                             href="#education-section"
                                             ref={React.createRef()}
+                                            style={{ color: color }}
                                         >
                                             Education
                                         </a>
@@ -67,6 +101,7 @@ function Header({ showContactModal }) {
                                             className="nav-link"
                                             href="#skills-section"
                                             ref={React.createRef()}
+                                            style={{ color: color }}
                                         >
                                             Skills
                                         </a>
@@ -76,6 +111,7 @@ function Header({ showContactModal }) {
                                             className="nav-link"
                                             href="#services-section"
                                             ref={React.createRef()}
+                                            style={{ color: color }}
                                         >
                                             Services
                                         </a>
@@ -85,6 +121,7 @@ function Header({ showContactModal }) {
                                             className="nav-link"
                                             href="#projects-section"
                                             ref={React.createRef()}
+                                            style={{ color: color }}
                                         >
                                             Projects
                                         </a>
@@ -95,6 +132,7 @@ function Header({ showContactModal }) {
                                             data-toggle="modal"
                                             data-target="#contactModal"
                                             onClick={showContactModal}
+                                            style={{ color: color }}
                                         >
                                             Contact
                                         </span>
