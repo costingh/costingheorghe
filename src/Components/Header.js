@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import ScrollSpy from 'react-scrollspy-navigation'
 
 function Header({ showContactModal }) {
@@ -17,6 +17,24 @@ function Header({ showContactModal }) {
             mobileMenu.classList.add('mobile')
         }
     }
+
+    window.addEventListener('scroll', function () {
+        let header = document.querySelector('header')
+        let st = window.pageYOffset || document.documentElement.scrollTop // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+
+        let lastScrollTop = 0
+        if (st > lastScrollTop) {
+            // downscroll code
+            header.style.position = 'fixed'
+            header.style.backgroundColor = 'rgba(100,100,100,0.8)'
+            header.style.borderBottom = '1px solid #ef4b6c'
+        } else {
+            // upscroll code
+            header.style.position = 'absolute'
+            header.style.backgroundColor = 'transparent'
+            header.style.borderBottom = 'none'
+        }
+    })
 
     return (
         <header id="header-section">
