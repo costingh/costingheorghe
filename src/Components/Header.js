@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 /* import ScrollSpy from 'react-scrollspy-navigation' */
 
 import Scrollspy from 'react-scrollspy'
 
 function Header({ showContactModal }) {
+    const [mobileMenu, setMobileMenu] = useState(false)
+
     const toggleMenu = () => {
         const app = document.querySelector('.app')
         const headerMenu = document.querySelector('.header-menu')
@@ -13,10 +15,12 @@ function Header({ showContactModal }) {
             app.classList.remove('fixed')
             headerMenu.classList.remove('open')
             mobileMenu.classList.remove('mobile')
+            setMobileMenu(false)
         } else {
             app.classList.add('fixed')
             headerMenu.classList.add('open')
             mobileMenu.classList.add('mobile')
+            setMobileMenu(true)
         }
     }
 
@@ -72,6 +76,7 @@ function Header({ showContactModal }) {
                                         className="nav-link"
                                         href="#home-section"
                                         ref={React.createRef()}
+                                        onClick={mobileMenu && toggleMenu}
                                     >
                                         Home
                                     </a>
@@ -81,6 +86,7 @@ function Header({ showContactModal }) {
                                         className="nav-link"
                                         href="#about-section"
                                         ref={React.createRef()}
+                                        onClick={mobileMenu && toggleMenu}
                                     >
                                         About
                                     </a>
@@ -90,6 +96,7 @@ function Header({ showContactModal }) {
                                         className="nav-link"
                                         href="#education-section"
                                         ref={React.createRef()}
+                                        onClick={mobileMenu && toggleMenu}
                                     >
                                         Education
                                     </a>
@@ -99,6 +106,7 @@ function Header({ showContactModal }) {
                                         className="nav-link"
                                         href="#skills-section"
                                         ref={React.createRef()}
+                                        onClick={mobileMenu && toggleMenu}
                                     >
                                         Skills
                                     </a>
@@ -108,6 +116,7 @@ function Header({ showContactModal }) {
                                         className="nav-link"
                                         href="#services-section"
                                         ref={React.createRef()}
+                                        onClick={mobileMenu && toggleMenu}
                                     >
                                         Services
                                     </a>
@@ -117,6 +126,7 @@ function Header({ showContactModal }) {
                                         className="nav-link"
                                         href="#projects-section"
                                         ref={React.createRef()}
+                                        onClick={mobileMenu && toggleMenu}
                                     >
                                         Projects
                                     </a>
