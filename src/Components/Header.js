@@ -11,13 +11,23 @@ function Header({ showContactModal }) {
         const headerMenu = document.querySelector('.header-menu')
         const mobileMenu = document.querySelector('.mobile-menu')
 
-        if (app.classList.contains('fixed')) {
+        /* if (app.classList.contains('fixed')) {
             app.classList.remove('fixed')
             headerMenu.classList.remove('open')
             mobileMenu.classList.remove('mobile')
             setMobileMenu(false)
         } else {
             app.classList.add('fixed')
+            headerMenu.classList.add('open')
+            mobileMenu.classList.add('mobile')
+            setMobileMenu(true)
+        } */
+
+        if (headerMenu.classList.contains('open')) {
+            headerMenu.classList.remove('open')
+            mobileMenu.classList.remove('mobile')
+            setMobileMenu(false)
+        } else {
             headerMenu.classList.add('open')
             mobileMenu.classList.add('mobile')
             setMobileMenu(true)
