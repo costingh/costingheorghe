@@ -41,7 +41,7 @@ function About() {
                                         <div>
                                             <a
                                                 className="btn btn-work"
-                                                href="costingh.github.io/costingheorghe/documents/resume.pdf"
+                                                href="https://costingh.github.io/resume/"
                                                 target="_blank"
                                             >
                                                 See Resume
