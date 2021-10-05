@@ -41,10 +41,10 @@ function About() {
                                         <div>
                                             <a
                                                 className="btn btn-work"
-                                                href="e"
+                                                href="costingh.github.io/costingheorghe/documents/resume.pdf"
                                                 target="_blank"
                                             >
-                                                Download Resume
+                                                See Resume
                                             </a>
                                         </div>
                                     </div>
