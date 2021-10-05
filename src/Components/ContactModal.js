@@ -1,7 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import '../styles/ContactModal.css'
+import emailjs from 'emailjs-com'
 
 function ContactModal({ hideContactModal, showModal }) {
+    const form = useRef()
+
     useEffect(() => {
         const modal = document.querySelector('.contact-modal')
 
@@ -26,11 +29,35 @@ function ContactModal({ hideContactModal, showModal }) {
         }, 500)
     }
 
+    const sendEmail = (e) => {
+        e.preventDefault()
+        emailjs
+            .sendForm(
+                process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
+                form.current,
+                process.env.REACT_APP_USER_ID
+            )
+            .then(
+                (result) => {
+                    alert('Email was sent!')
+                    console.log(result.text)
+                    hide()
+                },
+                (error) => {
+                    alert('Could not send email!')
+                    console.log(error.text)
+                }
+            )
+    }
+
     return (
-        <div
+        <form
             className="modal contact-modal modal-backdrop fade"
             id="contactModal"
             role="dialog"
+            ref={form}
+            onSubmit={sendEmail}
         >
             <div className="modal-dialog modal-dialog-centered">
                 <svg
@@ -93,27 +120,40 @@ function ContactModal({ hideContactModal, showModal }) {
                                     to check your spam account just in case!
                                 </p>
                                 <div className="form-wrapper">
-                                    <input type="text" placeholder="Name *" />
-                                    <input type="text" placeholder="Email *" />
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        placeholder="Name *"
+                                    />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        placeholder="Email *"
+                                    />
                                     <input
                                         type="text"
                                         placeholder="Subject *"
+                                        name="subject"
                                     />
                                     <input
                                         type="text"
                                         placeholder="Message *"
+                                        name="message"
                                     />
                                     <div className="divider"></div>
-                                    <div className="send-request-btn">
+                                    <button
+                                        className="send-request-btn"
+                                        type="submit"
+                                    >
                                         Send Request
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     )
 }
 
