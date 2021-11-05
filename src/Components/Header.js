@@ -42,9 +42,8 @@ function Header({ showContactModal }) {
         if (st > lastScrollTop) {
             // downscroll code
             header.style.position = 'fixed'
-            header.style.backgroundColor = 'rgba(100,100,100,1)'
-            /*  header.style.backgroundImage =
-                'linear-gradient(225deg, #1ad4bb, #b2de94)' */
+            header.style.backgroundColor = 'rgba(0, 0, 0, .8)'
+
             header.style.borderBottom = '1px solid #ef4b6c'
         } else {
             // upscroll code

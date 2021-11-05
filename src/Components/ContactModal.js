@@ -31,12 +31,22 @@ function ContactModal({ hideContactModal, showModal }) {
 
     const sendEmail = (e) => {
         e.preventDefault()
+        const inputs = document
+            .querySelector('#contactModal')
+            .querySelectorAll('input')
+
+        for (let i = 0; i < inputs.length; i++)
+            if (inputs[i].value === '') {
+                alert('Please fill out the form!')
+                return
+            }
+
         emailjs
             .sendForm(
-                process.env.REACT_APP_SERVICE_ID,
-                process.env.REACT_APP_TEMPLATE_ID,
+                'service_y1yifke',
+                'template_q5rja0j',
                 form.current,
-                process.env.REACT_APP_USER_ID
+                'user_tVteveUsM16crDy2sQoLk'
             )
             .then(
                 (result) => {
@@ -115,9 +125,9 @@ function ContactModal({ hideContactModal, showModal }) {
                             <div>
                                 <h3>Let's Talk!</h3>
                                 <p>
-                                    We will get back to you within one to two
-                                    days through email. Also please don't forget
-                                    to check your spam account just in case!
+                                    I will get back to you as soon as I can.
+                                    Also please don't forget to check your spam
+                                    account just in case!
                                 </p>
                                 <div className="form-wrapper">
                                     <input

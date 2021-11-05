@@ -36,13 +36,16 @@ function Skills() {
                                         )}
                                         {checked ? (
                                             <p>
-                                                These are the tools that I used
-                                                the most when building projects.
+                                                During University studies and by
+                                                developing personal projects I
+                                                got familiar with the following
+                                                tools.
                                             </p>
                                         ) : (
                                             <p>
-                                                I have used this technologies
-                                                many times to develop web apps.
+                                                My tech stack is based on the
+                                                following programming
+                                                languages/frameworks/libraries.
                                             </p>
                                         )}
                                         <div className="leftAbs">

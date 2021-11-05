@@ -48,10 +48,7 @@ function HomeServices() {
                                     </div>
                                     <div className="service-detail text-center">
                                         <h3>UI/UX</h3>
-                                        <p>
-                                            Landing Pages, User Flow,
-                                            Wireframing, Prototyping
-                                        </p>
+                                        <p>Basic Prototyping & Wireframing,</p>
                                     </div>
                                 </div>
                             </div>
@@ -95,8 +92,8 @@ function HomeServices() {
                                     <div className="service-detail text-center">
                                         <h3>Backend</h3>
                                         <p>
-                                            Java, Javascript, Spring Boot, Web
-                                            App
+                                            Java & Javascript (Spring Boot and
+                                            NodeJS)
                                         </p>
                                     </div>
                                 </div>
@@ -142,8 +139,8 @@ function HomeServices() {
                                     <div className="service-detail text-center">
                                         <h3>Icon/Illustration</h3>
                                         <p>
-                                            Character Design, Icon Set,
-                                            Illustration Set
+                                            Simple Illustrations and Icons
+                                            design
                                         </p>
                                     </div>
                                 </div>
@@ -189,8 +186,9 @@ function HomeServices() {
                                     <div className="service-detail text-center">
                                         <h3>Frontend</h3>
                                         <p>
-                                            Javascript, React.js, Next.js,
-                                            Responsive Web App
+                                            Develop Web Applications using HTML,
+                                            CSS, ReactJS, NextJS and other
+                                            popular frameworks.
                                         </p>
                                     </div>
                                 </div>
@@ -236,8 +234,8 @@ function HomeServices() {
                                     <div className="service-detail text-center">
                                         <h3>API</h3>
                                         <p>
-                                            Develop REST/RESTFUL API, API
-                                            Integration
+                                            Develop & Design REST API's, testing
+                                            using Postman, API Integration
                                         </p>
                                     </div>
                                 </div>
@@ -283,8 +281,9 @@ function HomeServices() {
                                     <div className="service-detail text-center">
                                         <h3>Databases</h3>
                                         <p>
-                                            Relational / Non Relational DB,
-                                            MongoDB, MySQL
+                                            Understanding of structured query
+                                            language (SQL), basic knowledge of
+                                            NoSql Databases like MongoDB.
                                         </p>
                                     </div>
                                 </div>

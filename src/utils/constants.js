@@ -2,16 +2,16 @@ export const timelineEvents = [
     {
         from: 'September 2015',
         to: 'May 2019',
-        universityName: 'Matei Basarab National College',
-        description: 'Mathematics & Computer Science',
-        classes: ['Mathematics', 'Computer science', 'Physics'],
+        universityName: '"Matei Basarab" National College',
+        description: 'Mathematics & Informatics',
+        classes: ['Mathematics', 'Informatics', 'Physics'],
     },
     {
         from: 'September 2019',
         to: 'Present',
         universityName: 'Politehnica University of Bucharest',
-        description: 'Mathematics & Computer Science',
-        classes: ['Computer science', 'Mathematics', 'Physics'],
+        description: 'Computer Science',
+        classes: ['Computer science', 'Mathematics', 'Physics', 'Electronics'],
     },
 ]
 
