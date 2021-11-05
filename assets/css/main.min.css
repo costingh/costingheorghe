@@ -3880,6 +3880,8 @@ tbody.collapse.show {
 .nav-link {
     display: block;
     padding: 0.5rem 1rem;
+    font-size: 15px !important;
+    font-weight: 600 !important;
 }
 
 .nav-link:focus,
@@ -11967,7 +11969,7 @@ footer {
     z-index: 0;
     top: 0;
     right: 0;
-    background-image: url(../images/work-pattern.png);
+    /* background-image: url(../images/work-pattern.png); */
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 100% auto;
@@ -12014,7 +12016,7 @@ footer {
     z-index: 0;
     top: 0;
     right: 0;
-    background-image: url(../images/work-pattern.png);
+    /* background-image: url(../images/work-pattern.png); */
     background-repeat: no-repeat;
     background-position: 0 0;
     background-size: 100% auto;
